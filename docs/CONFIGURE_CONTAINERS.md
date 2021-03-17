@@ -231,7 +231,7 @@ $ SPGW0_IP=`docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAdd
 $ python3 component/oai-mme/ci-scripts/generateConfigFiles.py --kind=MME \
           --hss_s6a=${HSS_IP} --mme_s6a=${MME_IP} \
           --mme_s1c_IP=${MME_IP} --mme_s1c_name=eth0 \
-          --mme_s10_IP=${MME_IP} --mme_s10_name=eth0 \
+          --mme_s10_IP=${MME_IP} --mme_s10_name=lo \
           --mme_s11_IP=${MME_IP} --mme_s11_name=eth0 --spgwc0_s11_IP=${SPGW0_IP} \
           --mcc=320 --mnc=230 --tac_list="5 6 7" --from_docker_file
 $ docker cp ./mme-cfg.sh prod-oai-mme:/openair-mme/scripts
