@@ -297,6 +297,7 @@ $ python3 component/oai-spgwc/ci-scripts/generateConfigFiles.py --kind=SPGW-C \
           --dns1_ip=YOUR_DNS_IP_ADDRESS --dns2_ip=A_SECONDARY_DNS_IP_ADDRESS --from_docker_file
 $ docker cp ./spgwc-cfg.sh prod-oai-spgwc:/openair-spgwc
 $ docker exec -it prod-oai-spgwc /bin/bash -c "cd /openair-spgwc && chmod 777 spgwc-cfg.sh && ./spgwc-cfg.sh"
+$ docker exec -it prod-oai-spgwc /bin/bash -c "ifconfig lo:s5c 127.0.0.15 up && ifconfig lo:p5c 127.0.0.16 up
 ifconfig lo:s5c 127.0.0.15 up --> OK
 ifconfig lo:p5c 127.0.0.16 up --> OK
 ```
