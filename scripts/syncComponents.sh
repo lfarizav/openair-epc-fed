@@ -23,7 +23,7 @@
 function usage {
     echo "Openair-CN components synchronization"
     echo "   Original Author: Raphael Defosseux"
-    echo "   Modifies by Luis Felipe Ariza Vesga - lfarizav@idtolu.com"
+    echo "   Modified by Luis Felipe Ariza Vesga - lfarizav@idtolu.com"
     echo ""
     echo "   Requirement: git shall be installed"
     echo ""
